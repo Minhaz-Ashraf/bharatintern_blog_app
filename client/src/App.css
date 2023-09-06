@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+}
+a{
+    cursor: pointer;
+}
+body{
+    background-color: #f6f3f3;
+    color: #222;
+}
+img{
+    max-width: 100%;
+}
+main{
+    padding: 10px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+header a{
+    text-decoration:none;
+    color: inherit;
+}
+header nav a span{
+    font-weight: bold;
+
+}
+header a.logo{
+    font-weight: bold;
+    font-size: 2.0rem;
+}
+header nav{
+    display:flex;
+    gap: 35px;
+    font-size: 1.3rem;
+}
+div.post{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 900px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+div.texts{
+    border-radius: 10px;
+    background-color: #fdf9f9;
+}
+
+div.post div.texts h2{
+    margin-top: 0;
+    margin-left:  18px;
+    font-size: 2rem;
+}
+div.post div.texts a{
+    margin-left:  18px;
+    text-decoration:none;
+    color: inherit;
+}
+div.post p.info{
+    margin:24px 0;
+    color: #888;
+    font-size:1rem;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+}
+div.post p.info a.author{
+    color:#333;
+}
+div.post p.summary{
+    margin:10px 0 0 18px;
+    line-height: 1.8rem;
+}
+div.post-page div.image{
+    max-height:400px;
+    display: flex;
+    overflow:hidden;
+}
+div.post-page div.image img{
+    object-fit: cover;
+    object-position: center center;
+    margin-left: 70px;
+    width: 80%;
+}
+div.post-page a{
+    color:#333;
+    text-decoration: underline;
+}
+div.post-page h1{
+    text-align: center;
+    margin: 10px 0 5px;
+    color: black;
+}
+div.post-page time{
+    text-align: center;
+    display: block;
+    font-size:1rem;
+    color:#a19e9e;
+    margin: 10px 0;
+}
+div.post-page div.author{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+
+div.content p{
+    line-height: 1.7rem;
+    margin: 30px 0;
+}
+div.content li{
+    margin-bottom: 10px;
+}
+div.edit-row{
+    text-align: center;
+    margin-bottom: 20px;
+}
+div.post-page a.edit-btn{
+    background-color: #333;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    padding:15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+a svg{
+    height:20px;
+}
+.input-style {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .input-style:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  .summaryin{
+    width: 100%;
+  }
+  .creupd-button{
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+  }
+  input[type="file"] {
+    display: none;
+}
+.file-input{
+    border: 1px solid #000000;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius:5px;
+}
+.file-input:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  /* responsive */
+
+  @media screen and (min-width: 700px) {
+    div.post{
+        grid-template-columns: .9fr 1.1fr;
+    }
+}
+@media (max-width: 600px) {
+    .logo{
+      font-size: 1.7rem !important;
+        width: 40%;
+        margin-top: -5%;
+    }
+    nav{
+        margin: -2% 5% 0 0;
+        gap: 15px !important;
+    }
+    .post{
+        margin: 0;
+        width: 100% !important;
+    }
+    div.post-page div.image img{
+       margin-left: 38px;
+    }
+    div.post-page div.content{
+        text-align: justify;
+    }
+}
